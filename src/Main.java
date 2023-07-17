@@ -22,9 +22,11 @@ public class Main {
         System.out.println("Area of circle: " + circleArea);
         Square sq1 = new Square(5);
         Shape sq2 = new Square(6);
+        Rectangle r1 = new Rectangle(2.5,8);
         //double squareArea = square.calculateArea();
         //System.out.println("Area of square: " + squareArea);
         System.out.println("Area of sq1: " + sq1.calculateArea());
         System.out.println("Area of sq2: " + sq2.calculateArea());
+        System.out.println("Area of r1:  " + r1.calculateArea());
     }
 }
