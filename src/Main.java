@@ -42,12 +42,17 @@ public class Main {
         //System.out.println("Current year: " + yr);
         System.out.print("What year were you born? ");
         int birth = sc.nextInt();
-        int age = LocalDate.now().getYear()-birth;
+        int age = LocalDate.now().getYear() - birth;
         sc.nextLine();
         System.out.println("You were born in "+birth+" so you're "+age);
         System.out.println("Enter another string:");
         String st2 = sc.nextLine();
         System.out.println("string = " + st2);
+        //test classe Persona
+        Persona p1 = new Persona("Antonio","Sedicina",36,"blu");
+        Persona p2 = new Persona("Mario","Rossi",60,"nero");
+        p1.saluta(p2);
+        p2.saluta(p1);
 
     }
 }
